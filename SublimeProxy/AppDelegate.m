@@ -12,8 +12,9 @@
 
 //NSString *const APP_PATH = @"/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl";
 //NSString *const LINE_FORMAT = @"%@:%d;
-NSString *const APP_PATH = @"/Applications/Visual Studio Code.app/Contents/MacOS/Electron";
-NSString *const LINE_FORMAT = @"%@:%d:0";
+NSString *const APP_PATH = @"/usr/local/bin/rider";
+NSString *const LINE_FORMAT = @"%@:%d";
+NSString *const SLN_FORMAT = @"%@%@-csharp.sln";
 
 - (void)applicationWillFinishLaunching:(NSNotification *)aNotification {
     [[NSAppleEventManager sharedAppleEventManager]
@@ -41,8 +42,18 @@ NSString *const LINE_FORMAT = @"%@:%d:0";
     NSString *filepathWithLine = [NSString stringWithFormat:LINE_FORMAT, filepath, x];
     filepathWithLine = [filepathWithLine stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSArray *arguments;
+    
+    // km: parsing the file name to figure out the sln file to open
+    NSArray *pathItems = [filepathWithLine componentsSeparatedByString:@"Assets"];
+    NSString *basePath = pathItems[0];
+    
+    NSArray *basePathItems = [basePath componentsSeparatedByString:@"/"];
+    NSString *baseFolderName = basePathItems[[basePathItems count] - 2];
+    
+    NSString *slnFile = [NSString stringWithFormat:SLN_FORMAT, basePath, baseFolderName];
+    
     // wh: had to add more flags to the arguments array
-    arguments = [NSArray arrayWithObjects: @"-r", @"-g", filepathWithLine, nil];
+    arguments = [NSArray arrayWithObjects: slnFile, filepathWithLine, nil];
     [task setArguments: arguments];
     
     [task launch];

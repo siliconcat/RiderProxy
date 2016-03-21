@@ -1,3 +1,11 @@
+# Rider Proxy
+- CapnCromulent who I happily copied from VSC Proxy (https://github.com/CapnCromulent/VSCProxy) :)
+
+To use:
+- Build or grab the pre-compiled RiderProxy app
+- Make sure rider was installed at /usr/local/bin
+- Point Unity External Editor to RiderProxy
+
 # VSC Proxy
 
 To install:
