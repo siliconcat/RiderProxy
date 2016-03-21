@@ -13,24 +13,24 @@
 		102B54B61747CFD600977AEA /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 102B54B41747CFD600977AEA /* Credits.rtf */; };
 		102B54B91747CFD600977AEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 102B54B81747CFD600977AEA /* AppDelegate.m */; };
 		9DA4D3E417A992750058655C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DA4D3E317A992750058655C /* MainMenu.xib */; };
-		F94D2CCA1B4DA99600F0CF9C /* VSCProxy.icns in Resources */ = {isa = PBXBuildFile; fileRef = F94D2CC91B4DA99600F0CF9C /* VSCProxy.icns */; };
+		F94D2CCA1B4DA99600F0CF9C /* RiderProxy.icns in Resources */ = {isa = PBXBuildFile; fileRef = F94D2CC91B4DA99600F0CF9C /* RiderProxy.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		102B54A21747CFD600977AEA /* VSCProxy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VSCProxy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		102B54A21747CFD600977AEA /* RiderProxy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RiderProxy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		102B54A51747CFD600977AEA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		102B54A81747CFD600977AEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		102B54A91747CFD600977AEA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		102B54AA1747CFD600977AEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		102B54AD1747CFD600977AEA /* VSCProxy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VSCProxy-Info.plist"; sourceTree = "<group>"; };
+		102B54AD1747CFD600977AEA /* RiderProxy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RiderProxy-Info.plist"; sourceTree = "<group>"; };
 		102B54AF1747CFD600977AEA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		102B54B11747CFD600977AEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		102B54B31747CFD600977AEA /* VSCProxy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VSCProxy-Prefix.pch"; sourceTree = "<group>"; };
+		102B54B31747CFD600977AEA /* RiderProxy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RiderProxy-Prefix.pch"; sourceTree = "<group>"; };
 		102B54B51747CFD600977AEA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		102B54B71747CFD600977AEA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		102B54B81747CFD600977AEA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9DA4D3E317A992750058655C /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
-		F94D2CC91B4DA99600F0CF9C /* VSCProxy.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = VSCProxy.icns; sourceTree = "<group>"; };
+		F94D2CC91B4DA99600F0CF9C /* RiderProxy.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = RiderProxy.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +48,7 @@
 		102B54991747CFD600977AEA = {
 			isa = PBXGroup;
 			children = (
-				102B54AB1747CFD600977AEA /* VSCProxy */,
+				102B54AB1747CFD600977AEA /* RiderProxy */,
 				102B54A41747CFD600977AEA /* Frameworks */,
 				102B54A31747CFD600977AEA /* Products */,
 			);
@@ -57,7 +57,7 @@
 		102B54A31747CFD600977AEA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				102B54A21747CFD600977AEA /* VSCProxy.app */,
+				102B54A21747CFD600977AEA /* RiderProxy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,26 +81,26 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		102B54AB1747CFD600977AEA /* VSCProxy */ = {
+		102B54AB1747CFD600977AEA /* RiderProxy */ = {
 			isa = PBXGroup;
 			children = (
-				F94D2CC91B4DA99600F0CF9C /* VSCProxy.icns */,
+				F94D2CC91B4DA99600F0CF9C /* RiderProxy.icns */,
 				102B54B71747CFD600977AEA /* AppDelegate.h */,
 				102B54B81747CFD600977AEA /* AppDelegate.m */,
 				102B54AC1747CFD600977AEA /* Supporting Files */,
 				9DA4D3E317A992750058655C /* MainMenu.xib */,
 			);
-			name = VSCProxy;
+			name = RiderProxy;
 			path = SublimeProxy;
 			sourceTree = "<group>";
 		};
 		102B54AC1747CFD600977AEA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				102B54AD1747CFD600977AEA /* VSCProxy-Info.plist */,
+				102B54AD1747CFD600977AEA /* RiderProxy-Info.plist */,
 				102B54AE1747CFD600977AEA /* InfoPlist.strings */,
 				102B54B11747CFD600977AEA /* main.m */,
-				102B54B31747CFD600977AEA /* VSCProxy-Prefix.pch */,
+				102B54B31747CFD600977AEA /* RiderProxy-Prefix.pch */,
 				102B54B41747CFD600977AEA /* Credits.rtf */,
 			);
 			name = "Supporting Files";
@@ -109,9 +109,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		102B54A11747CFD600977AEA /* VSCProxy */ = {
+		102B54A11747CFD600977AEA /* RiderProxy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 102B54BF1747CFD600977AEA /* Build configuration list for PBXNativeTarget "VSCProxy" */;
+			buildConfigurationList = 102B54BF1747CFD600977AEA /* Build configuration list for PBXNativeTarget "RiderProxy" */;
 			buildPhases = (
 				102B549E1747CFD600977AEA /* Sources */,
 				102B549F1747CFD600977AEA /* Frameworks */,
@@ -121,9 +121,9 @@
 			);
 			dependencies = (
 			);
-			name = VSCProxy;
+			name = RiderProxy;
 			productName = SublimeProxy;
-			productReference = 102B54A21747CFD600977AEA /* VSCProxy.app */;
+			productReference = 102B54A21747CFD600977AEA /* RiderProxy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -133,9 +133,9 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = Whuang;
+				ORGANIZATIONNAME = SingleMalt;
 			};
-			buildConfigurationList = 102B549D1747CFD600977AEA /* Build configuration list for PBXProject "VSCProxy" */;
+			buildConfigurationList = 102B549D1747CFD600977AEA /* Build configuration list for PBXProject "RiderProxy" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -147,7 +147,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				102B54A11747CFD600977AEA /* VSCProxy */,
+				102B54A11747CFD600977AEA /* RiderProxy */,
 			);
 		};
 /* End PBXProject section */
@@ -158,7 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				102B54B01747CFD600977AEA /* InfoPlist.strings in Resources */,
-				F94D2CCA1B4DA99600F0CF9C /* VSCProxy.icns in Resources */,
+				F94D2CCA1B4DA99600F0CF9C /* RiderProxy.icns in Resources */,
 				102B54B61747CFD600977AEA /* Credits.rtf in Resources */,
 				9DA4D3E417A992750058655C /* MainMenu.xib in Resources */,
 			);
@@ -262,9 +262,10 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SublimeProxy/VSCProxy-Prefix.pch";
-				INFOPLIST_FILE = "SublimeProxy/VSCProxy-Info.plist";
-				PRODUCT_NAME = VSCProxy;
+				GCC_PREFIX_HEADER = "SublimeProxy/RiderProxy-Prefix.pch";
+				INFOPLIST_FILE = "SublimeProxy/RiderProxy-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.singlemalt.RiderProxy;
+				PRODUCT_NAME = RiderProxy;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -274,9 +275,10 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SublimeProxy/VSCProxy-Prefix.pch";
-				INFOPLIST_FILE = "SublimeProxy/VSCProxy-Info.plist";
-				PRODUCT_NAME = VSCProxy;
+				GCC_PREFIX_HEADER = "SublimeProxy/RiderProxy-Prefix.pch";
+				INFOPLIST_FILE = "SublimeProxy/RiderProxy-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.singlemalt.RiderProxy;
+				PRODUCT_NAME = RiderProxy;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -284,7 +286,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		102B549D1747CFD600977AEA /* Build configuration list for PBXProject "VSCProxy" */ = {
+		102B549D1747CFD600977AEA /* Build configuration list for PBXProject "RiderProxy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				102B54BD1747CFD600977AEA /* Debug */,
@@ -293,7 +295,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		102B54BF1747CFD600977AEA /* Build configuration list for PBXNativeTarget "VSCProxy" */ = {
+		102B54BF1747CFD600977AEA /* Build configuration list for PBXNativeTarget "RiderProxy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				102B54C01747CFD600977AEA /* Debug */,
