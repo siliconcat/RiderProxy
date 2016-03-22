@@ -5,3 +5,8 @@ RiderProxy.xcodeproj/project.xcworkspace
 RiderProxy.xcodeproj/xcuserdata
 
 .DS_Store
+.idea/
+Builds/Debug/
+Builds/ModuleCache/
+Builds/RiderProxy.build/
+Builds/RiderProxy/

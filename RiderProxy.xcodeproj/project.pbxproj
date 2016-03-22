@@ -266,6 +266,7 @@
 				INFOPLIST_FILE = "SublimeProxy/RiderProxy-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.singlemalt.RiderProxy;
 				PRODUCT_NAME = RiderProxy;
+				SYMROOT = /Users/kmiller/Documents/code/VSCProxy/Builds/;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -279,6 +280,7 @@
 				INFOPLIST_FILE = "SublimeProxy/RiderProxy-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.singlemalt.RiderProxy;
 				PRODUCT_NAME = RiderProxy;
+				SYMROOT = /Users/kmiller/Documents/code/VSCProxy/Builds/;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

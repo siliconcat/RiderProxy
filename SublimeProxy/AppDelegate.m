@@ -36,6 +36,11 @@ NSString *const SLN_FORMAT = @"%@%@.sln";
         x = 0;
     }
     x += 1;
+
+    // check to see if Unity didn't pass in a line
+    if(x >= 17478) {
+        x = 1;
+    }
     
     const AEKeyword filekey  = '----';
     NSString *filepath = [[[event descriptorForKeyword:filekey] stringValue] stringByReplacingOccurrencesOfString:@"file://" withString:@""];
@@ -51,9 +56,9 @@ NSString *const SLN_FORMAT = @"%@%@.sln";
     NSString *baseFolderName = basePathItems[[basePathItems count] - 2];
     
     NSString *slnFile = [NSString stringWithFormat:SLN_FORMAT, basePath, baseFolderName];
-    
+
     // wh: had to add more flags to the arguments array
-    arguments = [NSArray arrayWithObjects: slnFile, filepathWithLine, nil];
+    arguments = @[slnFile, filepathWithLine];
     [task setArguments: arguments];
     
     [task launch];
