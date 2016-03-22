@@ -1,6 +1,8 @@
 # Rider Proxy
 - CapnCromulent who I happily copied from VSC Proxy (https://github.com/CapnCromulent/VSCProxy) :)
 
+NOTE: Remember to generate the sln file. To do that in Unity 5, run Assets -> Open C# Project;
+
 To use:
 - Build or grab the pre-compiled RiderProxy app
 - Make sure rider was installed at /usr/local/bin
