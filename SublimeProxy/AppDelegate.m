@@ -14,7 +14,7 @@
 //NSString *const LINE_FORMAT = @"%@:%d;
 NSString *const APP_PATH = @"/usr/local/bin/rider";
 NSString *const LINE_FORMAT = @"%@:%d";
-NSString *const SLN_FORMAT = @"%@%@-csharp.sln";
+NSString *const SLN_FORMAT = @"%@%@.sln";
 
 - (void)applicationWillFinishLaunching:(NSNotification *)aNotification {
     [[NSAppleEventManager sharedAppleEventManager]
