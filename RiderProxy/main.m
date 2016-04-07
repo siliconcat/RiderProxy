@@ -1,6 +1,6 @@
 //
 //  main.m
-//  SublimeProxy
+//  RiderProxy
 //
 //  Created by Tim Keating on 5/18/13.
 //  Modified by Allan Lavell to allow main menu .xib integration on 07/31/13.

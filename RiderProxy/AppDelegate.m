@@ -10,11 +10,10 @@
 
 @implementation AppDelegate
 
-//NSString *const APP_PATH = @"/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl";
-//NSString *const LINE_FORMAT = @"%@:%d;
-NSString *const APP_PATH = @"/usr/local/bin/rider";
+NSString *const APP_PATH = @"/Applications/Rider EAP.app/Contents/MacOS/rider";
 NSString *const LINE_FORMAT = @"%@:%d";
 NSString *const SLN_FORMAT = @"%@%@.sln";
+NSString *const LINE_OPT = @"--line";
 
 - (void)applicationWillFinishLaunching:(NSNotification *)aNotification {
     [[NSAppleEventManager sharedAppleEventManager]
@@ -56,9 +55,11 @@ NSString *const SLN_FORMAT = @"%@%@.sln";
     NSString *baseFolderName = basePathItems[[basePathItems count] - 2];
     
     NSString *slnFile = [NSString stringWithFormat:SLN_FORMAT, basePath, baseFolderName];
+    
+    NSString *line = [NSString stringWithFormat:@"%d", x];
 
     // wh: had to add more flags to the arguments array
-    arguments = @[slnFile, filepathWithLine];
+    arguments = @[slnFile, LINE_OPT, line, filepath];
     [task setArguments: arguments];
     
     [task launch];
