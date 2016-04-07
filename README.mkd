@@ -1,22 +1,23 @@
 # Rider Proxy
-- Thanks to CapnCromulent who I happily copied [VSCProxy](https://github.com/CapnCromulent/VSCProxy) from :) 
+- Special thanks to [BeachheadStudio](https://github.com/BeachheadStudio/RiderProxy) who did an initial version of this, after copying [VSCProxy](https://github.com/CapnCromulent/VSCProxy) by CapnCromulent, which in turn was based on the work of Tim Keating, who got the barebones event handler setup, and Allan Lavel, who did the heavy lifting for [SublimeProxy](https://github.com/thinkrad/SublimeProxy)
 
-NOTE: Remember to generate the sln file. To do that in Unity 5, run Assets -> Open C# Project
+The aim of this project is to be able to use the new [Project Rider](https://www.jetbrains.com/rider/), a C# IDE from Jetbrains, when creating amazing Games or other experiences in Unity 5. On a Mac.
 
-To use:
-- Build or grab the pre-compiled RiderProxy app
-- Make sure rider was installed at /usr/local/bin
-- Point Unity External Editor to RiderProxy
+To start using this quickly:
 
-# VSC Proxy
+- Copy the [RiderProxy.app](https://github.com/siliconcat/RiderProxy/tree/master/Builds) (inside the Builds directory) folder into your /Applications/ folder in the Mac.
+- On Unity, modify the ```Preferences > External Tools > External Script Editor``` to point to the RiderProxy app in the Applications folder.
+- It should now open the C# files in Rider!
 
-To install:
-- Build it or use the prebuilt package found in Builds (was compiled on Mac OSX
-10.8 64-bit)
-- Put VSCProxy.app wherever you want
-- Make sure original Visual Studio Code.app is in the Applications folder
-- Point Unity's External Editor setting at the Sublime Proxy app
+You can alternatively build the stuff from the source using Xcode, fighting a bit with the settings while you are on it.
 
-Special thanks to:
-- Tim Keating who got the barebones event handler setup
-- Allan Lavell who did the heavy lifting for SublimeProxy (https://github.com/thinkrad/SublimeProxy)
+## Differences from the BeachheadStudio implementation
+
+- Changed icon to use the one from Rider
+- Using the default Rider location at ```/Applications/Rider EAP.app/```
+
+## Known issues
+
+- Project Rider itself is an EAP, so things can stop working anytime, and it is a matter of time that we will see some official support from Unity. Jetbrains do great IDEs.
+- Opening a file could be quicker, since it attempts every time to open a new Rider (though it finds the running one fine).
+- After changing project without changing Rider, Rider will complain. Close Rider if switching projects in Unity.
